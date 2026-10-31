@@ -1,0 +1,8 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>subscription</groupId><artifactId>subscription-billing-management-system</artifactId><version>1.0</version>
+  <properties><maven.compiler.source>17</maven.compiler.source><maven.compiler.target>17</maven.compiler.target><project.build.sourceEncoding>UTF-8</project.build.sourceEncoding></properties>
+  <dependencies><dependency><groupId>com.mysql</groupId><artifactId>mysql-connector-j</artifactId><version>8.4.0</version></dependency>
+  <dependency><groupId>com.github.librepdf</groupId><artifactId>openpdf</artifactId><version>1.3.39</version></dependency></dependencies>
+  <build><plugins><plugin><artifactId>maven-assembly-plugin</artifactId><version>3.6.0</version><configuration><descriptorRefs><descriptorRef>jar-with-dependencies</descriptorRef></descriptorRefs><archive><manifest><mainClass>subscription.Main</mainClass></manifest></archive></configuration><executions><execution><phase>package</phase><goals><goal>single</goal></goals></execution></executions></plugin></plugins></build>
+</project>
